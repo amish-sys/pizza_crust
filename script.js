@@ -101,10 +101,10 @@ orderForm.addEventListener("submit", function (event) {
     orderSummary += `Contact: ${customerContact}\n`;
     orderSummary += `Address: ${customerAddress}\n\n`;
     orderSummary += `Order Details:\n`;
-    orderSummary += `${pizzaQuantity} x ${selectedPizza.name} - $${pizzaTotal}\n`;
-    orderSummary += `${sidesQuantity} x ${selectedSide.name} - $${sidesTotal}\n`;
-    orderSummary += `${drinksQuantity} x ${selectedDrink.name} - $${drinksTotal}\n\n`;
-    orderSummary += `Total: $${totalAmount}`;
+    orderSummary += `${pizzaQuantity} x ${selectedPizza.name} - KSH ${pizzaTotal}\n`;
+    orderSummary += `${sidesQuantity} x ${selectedSide.name} - KSH ${sidesTotal}\n`;
+    orderSummary += `${drinksQuantity} x ${selectedDrink.name} - KSH ${drinksTotal}\n\n`;
+    orderSummary += `Total: KSH ${totalAmount}`;
 
     // Display summary in the page
     summary.textContent = orderSummary.replace(/\n/g, "\n");
