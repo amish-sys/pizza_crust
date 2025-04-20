@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pizza Crust</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>The Pizza Crust</h1>
+    <div id="menu">
+        <h2>Menu</h2>
+        <h3>Pizzas</h3>
+        <ul id="pizza-list">
+            <!-- Pizza items will be dynamically added here -->
+        </ul>
+        <h3>Sides</h3>
+        <ul id="sides-list">
+            <!-- Sides items will be dynamically added here -->
+        </ul>
+        <h3>Drinks</h3>
+        <ul id="drinks-list">
+            <!-- Drinks items will be dynamically added here -->
+        </ul>
+    </div>
+    <div id="order-form">
+        <h2>Order Your Food</h2>
+        <form id="order">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="contact">Contact Information:</label>
+            <input type="text" id="contact" required>
+
+            <label for="address">Delivery Address:</label>
+            <input type="text" id="address" required>
+
+            <label for="pizza">Select Pizza:</label>
+            <select id="pizza" required>
+                <!-- Options will be populated here -->
+            </select>
+            <label for="pizza-quantity">Pizza Quantity:</label>
+            <input type="number" id="pizza-quantity" min="1" value="1" required>
+
+            <label for="sides">Select Sides:</label>
+            <select id="sides" required>
+                <!-- Options will be populated here -->
+            </select>
+            <label for="sides-quantity">Sides Quantity:</label>
+            <input type="number" id="sides-quantity" min="0" value="0" required>
+
+            <label for="drinks">Select Drinks:</label>
+            <select id="drinks" required>
+                <!-- Options will be populated here -->
+            </select>
+            <label for="drinks-quantity">Drinks Quantity:</label>
+            <input type="number" id="drinks-quantity" min="0" value="0" required>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+    <div id="order-summary">
+        <h2>Order Summary</h2>
+        <p id="summary"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
